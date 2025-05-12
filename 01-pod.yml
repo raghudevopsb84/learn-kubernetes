@@ -20,5 +20,14 @@ spec:
     image: nginx:1.14.2
   - name: debug
     image: rkalluru/learnk8s:rhel9-bare
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-01-03
+spec:
+  containers:
+  - name: redhat
+    image: docker.io/redhat/ubi9
 
 
