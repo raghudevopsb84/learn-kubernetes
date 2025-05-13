@@ -6,6 +6,7 @@ metadata:
     podName: nginx-01
     project: example
     appName: example01
+    sample/new: demo
 spec:
   containers:
   - name: nginx
