@@ -7,6 +7,7 @@ metadata:
     project: example
     appName: example01
     sample/new: demo
+    sample.new1: demo1
 spec:
   containers:
   - name: nginx
