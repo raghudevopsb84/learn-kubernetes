@@ -43,4 +43,5 @@ spec:
           name: sample-data
 ---
 
+# Values in k8s if it is string, then quotes are not mandatory. but if it is a integer then it is must.
 
