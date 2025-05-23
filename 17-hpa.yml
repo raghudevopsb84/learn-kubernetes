@@ -34,7 +34,7 @@ spec:
     kind: Deployment
     name: hpa-test
   minReplicas: 2
-  maxReplicas: 10
+  maxReplicas: 100
   metrics:
   - type: Resource
     resource:
