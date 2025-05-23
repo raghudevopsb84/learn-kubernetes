@@ -37,7 +37,7 @@ spec:
     containerPolicies:
       - containerName: '*'
         minAllowed:
-          cpu: 50m
+          cpu: 500m
         maxAllowed:
-          cpu: 100m
+          cpu: 600m
         controlledResources: ["cpu"]
