@@ -16,6 +16,7 @@ spec:
     spec:
       topologySpreadConstraints:
         - topologyKey: topology.kubernetes.io/project
+          minDomains: 3
           maxSkew: 1
           whenUnsatisfiable: DoNotSchedule
           labelSelector:
