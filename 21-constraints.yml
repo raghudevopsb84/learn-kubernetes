@@ -14,10 +14,10 @@ spec:
       labels:
         app: nginx
     spec:
-      topologySpreadConstraints:
-        - topologyKey: topology.kubernetes.io/project
-          maxSkew: 1
-          whenUnsatisfiable: DoNotSchedule
+#       topologySpreadConstraints:
+#         - topologyKey: topology.kubernetes.io/project
+#           maxSkew: 1
+#           whenUnsatisfiable: DoNotSchedule
       containers:
       - name: nginx
         image: nginx:1.15
