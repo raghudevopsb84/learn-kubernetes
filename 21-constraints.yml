@@ -18,6 +18,9 @@ spec:
         - topologyKey: topology.kubernetes.io/project
           maxSkew: 1
           whenUnsatisfiable: DoNotSchedule
+          labelSelector:
+            matchLabels:
+              topology.kubernetes.io/project: roboshop
       containers:
       - name: nginx
         image: nginx:1.15
