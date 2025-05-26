@@ -16,9 +16,8 @@ spec:
     spec:
       topologySpreadConstraints:
         - topologyKey: topology.kubernetes.io/project
-            #maxSkew: 1
-#
-#           whenUnsatisfiable: DoNotSchedule
+          maxSkew: 1
+          whenUnsatisfiable: DoNotSchedule
       containers:
       - name: nginx
         image: nginx:1.15
