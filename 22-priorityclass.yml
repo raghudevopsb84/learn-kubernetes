@@ -33,5 +33,30 @@ value: 1000000
 globalDefault: false
 description: "high priority no preemption"
 ---
-
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-with-preemption
+  labels:
+    priorityClass: high-priority-no-preemption
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      priorityClass: high-priority-no-preemption
+  template:
+    metadata:
+      labels:
+        priorityClass: high-priority-no-preemption
+    spec:
+      #priorityClassName: high-priority-no-preemption
+      containers:
+      - name: nginx
+        image: nginx:1.15
+        resources:
+          requests:
+            cpu: 300m
+            memory: 456Mi
+        ports:
+        - containerPort: 80
 
