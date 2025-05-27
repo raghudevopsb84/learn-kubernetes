@@ -20,7 +20,7 @@ spec:
       - weight: 100
         preference:
           matchExpressions:
-          - key: topology.kubernetes.io/project
+          - key: x
             operator: In
             values:
-            - roboshop
+            - 100
