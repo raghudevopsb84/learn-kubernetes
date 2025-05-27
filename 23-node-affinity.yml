@@ -11,7 +11,7 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: kubernetes.azure.com/consolidated-additional-properties
+          - key: new
             operator: In
             values:
             - "be9f963c"
