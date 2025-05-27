@@ -23,4 +23,4 @@ spec:
           - key: x
             operator: In
             values:
-            - 100
+            - "100"
