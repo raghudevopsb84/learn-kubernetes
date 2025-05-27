@@ -20,7 +20,7 @@ spec:
       - weight: 1
         preference:
           matchExpressions:
-          - key: topology.kubernetes.io/region
+          - key: project
             operator: In
             values:
-            - ukwest
+            - common
