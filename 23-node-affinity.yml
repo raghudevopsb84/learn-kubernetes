@@ -20,7 +20,7 @@ spec:
       - weight: 100
         preference:
           matchExpressions:
-          - key: purpose
+          - key: topology.kubernetes.io/project
             operator: In
             values:
-            - common
+            - roboshop1
