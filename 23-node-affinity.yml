@@ -20,7 +20,7 @@ spec:
       - weight: 1
         preference:
           matchExpressions:
-          - key: project
+          - key: purpose
             operator: In
             values:
             - common
