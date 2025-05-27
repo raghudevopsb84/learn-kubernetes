@@ -11,7 +11,7 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: newz
+          - key: topology.kubernetes.io/project
             operator: In
             values:
             - be9f963c
