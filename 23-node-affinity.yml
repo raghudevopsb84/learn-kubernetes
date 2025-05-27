@@ -19,7 +19,7 @@ spec:
       - weight: 100
         preference:
           matchExpressions:
-          - key: y
+          - key: yyy
             operator: In
             values:
             - abc
