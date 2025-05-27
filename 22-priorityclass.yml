@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment-no-constraint
+  name: nginx-no-priority-class
   labels:
-    app: nginx1
+    priorityClass: none
 spec:
   replicas: 20
   selector:
     matchLabels:
-      app: nginx1
+      priorityClass: none
   template:
     metadata:
       labels:
-        app: nginx1
+        priorityClass: none
     spec:
       containers:
       - name: nginx
@@ -24,3 +24,14 @@ spec:
             memory: 456Mi
         ports:
         - containerPort: 80
+---
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: high-priority-no-preemption
+value: 1000000
+globalDefault: false
+description: "high priority no preemption"
+---
+
+
