@@ -16,12 +16,11 @@ spec:
     spec:
       topologySpreadConstraints:
         - topologyKey: topology.kubernetes.io/project
-          minDomains: 3
           maxSkew: 1
           whenUnsatisfiable: DoNotSchedule
           labelSelector:
             matchLabels:
-              topology.kubernetes.io/project: roboshop
+              app: nginx
       containers:
       - name: nginx
         image: nginx:1.15
