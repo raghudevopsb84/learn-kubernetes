@@ -11,16 +11,15 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: topology.kubernetes.io/project
-            operator: In
-            values:
-            - roboshop1
-            - ecommerce1
-      preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
-        preference:
-          matchExpressions:
           - key: x
             operator: In
             values:
             - "100"
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+          - key: topology.kubernetes.io/project
+            operator: In
+            values:
+            - roboshop
