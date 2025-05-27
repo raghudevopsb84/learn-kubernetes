@@ -8,19 +8,19 @@ spec:
     image: nginx:1.14.2
   affinity:
     nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
-          - key: topology.kubernetes.io/project
-            operator: In
-            values:
-            - roboshop1
-            - ecommerce1
+#       requiredDuringSchedulingIgnoredDuringExecution:
+#         nodeSelectorTerms:
+#         - matchExpressions:
+#           - key: topology.kubernetes.io/project
+#             operator: In
+#             values:
+#             - roboshop1
+#             - ecommerce1
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
           matchExpressions:
           - key: purpose
-            operator: Exists
-#             values:
-#             - common
+            operator: In
+            values:
+            - common
