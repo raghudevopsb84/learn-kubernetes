@@ -14,7 +14,7 @@ spec:
           - key: new
             operator: In
             values:
-            - "be9f963c"
+            - be9f963c
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
