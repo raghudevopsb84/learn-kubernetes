@@ -14,6 +14,6 @@ spec:
           - key: topology.kubernetes.io/project
             operator: In
             values:
-            - roboshop
-            - ecommerce
+            - roboshop1
+            - ecommerce1
 
