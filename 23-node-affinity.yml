@@ -11,10 +11,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: x
+          - key: kubernetes.azure.com/consolidated-additional-properties
             operator: In
             values:
-            - "100"
+            - "be9f963c"
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
