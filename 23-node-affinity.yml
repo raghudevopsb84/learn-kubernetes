@@ -11,7 +11,7 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: new
+          - key: newz
             operator: In
             values:
             - be9f963c
