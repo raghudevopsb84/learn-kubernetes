@@ -21,6 +21,6 @@ spec:
         preference:
           matchExpressions:
           - key: purpose
-            operator: In
-            values:
-            - common
+            operator: Exists
+#             values:
+#             - common
