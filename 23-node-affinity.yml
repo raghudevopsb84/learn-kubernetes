@@ -14,7 +14,7 @@ spec:
           - key: topology.kubernetes.io/project
             operator: In
             values:
-            - roboshop
+            - roboshop1
             - ecommerce1
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
