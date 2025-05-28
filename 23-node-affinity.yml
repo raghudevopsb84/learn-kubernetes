@@ -11,10 +11,10 @@ spec:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
-          - key: topology.kubernetes.io/project
+          - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - be9f963c
+            - ukwest
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
