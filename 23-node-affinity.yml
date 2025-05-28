@@ -19,7 +19,7 @@ spec:
       - weight: 100
         preference:
           matchExpressions:
-          - key: yyy
+          - key: choice
             operator: In
             values:
-            - abc
+            - two
